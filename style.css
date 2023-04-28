@@ -1,0 +1,850 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variaveis*/
+:root{
+    --bg-principal: #31012C;
+    --bg-secudary: #550F4E;
+    --bg-icone: #F989ED;
+    --text-nav: #C6A6F2;
+    --text-primary: #F1B4EB;
+    --title-primary: #FF03D7;
+    --color-btn: #A979EC;
+
+    --fontRoboto: 'Roboto', sans-serif;
+    --fontInter: 'Inter', sans-serif;
+
+}
+
+
+/*Configurações padrões*/
+html, 
+body{
+    background-color: var(--bg-principal);
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*Hambuguer*/
+
+header .moblieNav{
+    display: none;
+}
+
+/*Cabeçalho*/
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+header .logo img{
+    height: 80px;
+    width: 80px;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 3.4rem;
+}
+
+header nav ul li a{
+    text-transform: uppercase;
+    font-family: var(--fontInter);
+    font-weight: 300;
+    color: var(--text-nav);
+
+    cursor: pointer;
+
+    transition: all 0.4s;
+}
+
+header nav ul li a:hover{
+    color: #A979EC;
+}
+
+.linePrimary{
+    border-top: 1px solid white;
+    width: 80%;
+    margin: 1px auto;
+}
+
+
+/*Conteudo principal*/
+main {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .photo img{
+    height: 440px;
+    width: 400px;
+    border-radius: 10px;
+    
+}
+
+main section div h1{
+    text-transform: uppercase;
+    color: var(--title-primary);
+    font-family: var(--fontRoboto);
+    font-size: 4rem;
+    font-weight: 400;
+    
+    margin-bottom: 1.5rem;
+}
+
+main section div h4{
+    text-align: center;
+    color: white;
+    font-family: var(--fontInter);
+    font-weight: 100;
+    font-size: 1.1rem;
+
+    margin-bottom: 3rem;
+}
+
+main section div p{
+    text-align: justify;
+    color: var(--text-primary);
+
+    font-family: var(--fontRoboto);
+    font-weight: 500;
+    font-size: 1.3rem;
+
+    width: 32rem;
+    margin-bottom: 5rem;
+}
+
+main section ul {
+    display: flex;
+    justify-content: center;
+    gap: 7.6rem;
+}
+
+main section li{
+    background-color: var(--color-btn);
+
+    padding-block: 13px;
+    padding-inline: 12px;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+
+main section li:hover{
+    background-color: var(--text-nav);
+}
+
+
+/*Projetos*/
+#project{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-bottom: 10rem;
+    margin-top: 180px;
+}
+
+#project .headerProject {
+    margin-bottom: 8rem;
+}
+
+#project .headerProject h1{
+    text-align: center;
+    color: var(--title-primary);
+    font-size: 3rem;
+    font-family: var(--fontRoboto);
+    
+    margin-bottom: 1rem;
+}
+
+#project .headerProject h3{
+    color: white;
+    font-family: var(--fontInter);
+    font-weight: 300;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cards .card img{
+    width: 300px;
+    height: 500px;
+
+    cursor: pointer;
+    opacity: 0.9;
+
+    margin-bottom: 3rem;
+
+    transition: all 0.3s;
+}
+
+.cards .card img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+ #slider{
+    display: none;
+}
+
+#slider .slide .numb{
+    background: #ffffff;
+
+    padding-inline: 15px;
+    padding-block: 5px;
+
+    border-radius: 50%;
+    border: none;
+  
+    mix-blend-mode: normal;
+    opacity: 0.20;
+  
+    cursor: pointer;
+}
+
+#slider .slide .clicado{
+    background: var(--bg-icone);
+    opacity: 1;
+}
+
+.moreProject {
+    font-size: 1rem;
+    font-family: var(--fontRoboto);
+    color: white;
+}
+
+.moreProject a{
+    font-weight: bolder;
+    color: var(--color-btn);
+}
+
+/*Curriculo*/
+#curriculum .background{
+    background-color: var(--bg-secudary);
+    width: 25%;
+    height: 850px;
+
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    border-radius: 20px; 
+}
+
+#curriculum .background header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    padding-inline: 2rem;
+    padding-block: 3rem;
+}
+
+#curriculum .background header .imgCurriculum img{
+    height: 150px;
+    border-radius: 50%;
+}
+
+#curriculum .background header .description h4{
+    text-align: center;
+    color: var(--title-primary);
+    font-size: 1.8rem;
+    font-family: var(--fontInter);
+    font-weight: 400;
+
+    margin-bottom: 1rem;
+}
+
+#curriculum .background header .description p{
+    text-align: justify;
+    color: #F1B4EB;
+    font-family: var(--fontInter);
+}
+
+#curriculum .lineCurriculum{
+    border-top: 1px solid #F989ED;
+    width: 100%;
+    margin: auto;
+}
+
+#curriculum #content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    
+    padding-top: 3rem;
+    padding-inline: 2rem;
+}
+
+#content h5{
+    color: white;
+    font-family: var(--fontInter);
+    font-size: 1.4rem;
+    font-weight: 300;
+
+    margin-bottom: 1rem;
+}
+
+#content .wraperTech{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    
+}
+
+#content .wraperTech .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    margin-left: 2rem;
+}
+
+#content .wraperTech .item .backItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--bg-icone);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+#content .wraperTech .item .backItem img{
+    height: 30px;
+}
+
+#content .wraperTech .item p{
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.7rem;
+    font-family: var(--fontInter);
+}
+
+#content .wraperHabi {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+#content .wraperHabi .habilidades {
+    margin-left: 2rem;
+    margin-bottom: 1rem; 
+}
+
+#content .wraperHabi .habilidade p {
+    color: white;
+    font-family: var(--fontInter);
+    font-size: 0.7rem;
+    font-weight: 400;
+
+    margin-bottom: 0.5rem;
+}
+
+#contactCurriculum {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 300px;
+}
+
+#contactCurriculum .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3rem;
+
+    width: 100%;
+
+    margin-left: 2rem;
+}
+
+#contactCurriculum .contacts img{
+    background-color: var(--color-btn);
+    padding: 10px;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#contactCurriculum .contacts img:hover{
+    background-color: var(--text-nav);
+}
+
+
+/*Botão para ir ao topo*/
+.btnFixed {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    padding: 2rem;
+}
+
+
+/*Resposividade Moblie*/
+@media(max-width: 500px){
+
+    header{
+        padding-top: 1rem;
+        margin-inline: 2rem;
+        justify-content: initial;
+    }
+
+    header .navegation ul {
+        position: fixed;
+        inset: 0 0 0 0;
+
+        background-color: var(--bg-secudary);
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: center;
+        font-size: 2rem;
+
+        padding: min(30vh, 10rem) 2em;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    header .navegation ul[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    header .navegation ul li {
+        margin-bottom: 1rem;
+    }
+
+    header .moblieNav{
+        display: flex;
+        align-items: center;
+
+        position: fixed;
+        top: 3rem;
+        right: 1rem;
+
+        height: 2rem;
+        margin-right: 2rem;
+
+        background: url("/assets/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+
+        aspect-ratio: 1;
+        z-index: 9999;
+        cursor: pointer;
+    }
+
+    header .moblieNav[aria-expanded="true"]{
+        background: url("/assets/icon-close.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header .moblieNav[aria-expanded="false"]{
+        position: absolute;
+    }
+
+    .linePrimary{
+        display: none;
+    }
+
+    main{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 8rem;
+    }
+
+    main .photo img{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 2rem;
+    }
+
+    main section div h1{
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    main section div h4{
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    main section div p{
+        font-size: 1rem;
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+
+    main section ul{
+        gap: 3rem;
+    }
+
+    main section li{
+        padding-block: 10px;
+        padding-inline: 9px;
+    }
+    
+    #project{
+        margin-bottom: 8rem;
+    }
+
+    #project .headerProject{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 4rem;
+    }
+
+    #project .headerProject h1{
+        width: 300px;
+        text-align: center;
+    }
+
+    #project .headerProject h3{
+        font-size: 0.9rem;
+        text-align: center;
+        width: 300px;
+    }
+
+    #project .cards{
+        flex-direction: column;
+    }
+
+    #project .card img{
+        margin-bottom: 1rem;
+    }
+
+    #img2, #img3{
+        display: none;
+    }
+
+    #slider{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .moreProject {
+        margin-top: 2rem;
+    }
+
+    #curriculum .background{
+        width: 70%;
+        height: 800px;
+    }
+
+    #curriculum .background header {
+       display: flex;
+       flex-direction: column;
+       gap: 0;
+
+       padding-block: 1rem;
+    }
+
+    #curriculum .background header .description h4{
+        font-size: 1.4rem;
+    }
+
+    #curriculum .background header .description p{
+        font-size: 0.8rem;
+    }
+
+    #curriculum .imgCurriculum img{
+        height: 120px; 
+    }
+
+    .lineCurriculum{
+        width: 100%;
+    }
+
+    #content{
+        padding-top: 2rem;
+        padding-inline: 2rem;
+        gap: 2rem;
+    }
+
+    #content h5{
+        font-size: 0.9rem;
+    }
+
+    #content .wraperTech{
+        gap: 2rem;
+    }
+
+    #content .wraperTech .item {
+        margin-left: 1rem;
+    }
+
+    #content .wraperTech .item .backItem{
+        height: 40px;
+        width: 40px;
+    }
+
+    #content .wraperTech .item .backItem img{
+        height: 18px;
+    }
+
+    #content .wraperTech .item p{
+        font-size: 0.6rem;
+    }
+
+    #content .wraperHabi {
+        gap: 2rem;
+    }
+
+    #content .wraperHabi .habilidades{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        margin-left: 1rem;
+    }
+
+    #content .wraperHabi .habilidade p{
+        font-size: 0.5rem;
+    }
+
+    
+    #content .wraperHabi .habilidades .habilidade img{
+        width: 100px;
+    }
+
+    #contactCurriculum .contacts{
+        width: 80%;
+        margin-left: 1rem;
+
+        gap: 2rem;
+    }
+
+    #contactCurriculum .contacts img{
+        padding: 5px;
+    }
+
+    .btnFixed{
+        padding: 1rem;
+        height: 80px;
+    }
+}
+
+
+/*Responsividade Tablet*/
+@media (min-width: 501px) and (max-width: 600px) {
+
+    header{
+        padding-top: 1rem;
+    }
+
+   .logo img{
+        height: 45px;
+        width: 45px;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    nav ul li a{
+        font-size: 0.9rem;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 5rem;
+    }
+ 
+    main .photo img {
+        width: 300px;
+        height: 350px;
+        margin-bottom: 1rem;
+    }
+
+    main section div h1{
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+
+    main section div h4{
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    main section div p{
+        font-size: 0.9rem;
+        width: 20rem;
+        margin-bottom: 1.5rem;
+    }
+
+    main section li{
+        padding-block: 8px;
+        padding-inline: 7px;
+    }
+
+    #project .headerProject {
+        margin-bottom: 2.5rem;
+    }
+
+    #project .headerProject h1{
+        font-size: 2.5rem;
+    }
+
+    #project .headerProject h3{
+        font-size: 1rem;
+        padding-inline: 4rem;
+        text-align: center;
+    }
+
+    #project .cards{
+        flex-direction: column;
+    }
+
+    #project .card img{
+        margin-bottom: 1rem;
+        width: 300px;
+        height: 500px;
+    }
+
+    #img2, #img3{
+        display: none;
+    }
+
+    #slider{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .moreProject {
+        margin-top: 2rem;
+    }
+
+    .btnFixed{
+        display: flex;
+        padding: 0rem;
+        height: 40px;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+
+    header{
+        padding-top: 2rem;
+
+    }
+
+    .logo img{
+        height: 60px;
+        width: 60px;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    nav ul a li{
+        font-size: 0.9rem;
+    }
+
+    main {
+        justify-content: center;
+        text-align: center;
+        margin-top: 5rem;
+        gap: 1rem;
+    }
+
+    main .photo img {
+        width: 250px;
+        height: 300px;
+        margin-bottom: 1rem;
+    }
+
+    main section div h1{
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+
+    main section div h4{
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    main section div p{
+        font-size: 0.9rem;
+        width: 20rem;
+        margin-bottom: 1.5rem;
+    }
+
+    main section li{
+        padding-block: 8px;
+        padding-inline: 7px;
+    }
+
+    .cards{
+        gap: 0rem;
+        padding-left: 1rem;
+    }
+
+    .cards .card img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .btnFixed{
+        display: flex;
+    }
+  
+}
+
+/*Responsividade curriculo*/
+@media (min-width: 501px) and (max-width: 1700px) {
+
+    #curriculum .background{
+        width: 450px;
+        height: 780px;
+        margin-bottom: 3rem;
+    }
+
+    #curriculum .background header{
+        padding-block: 1.5rem;
+    }
+
+    
+}

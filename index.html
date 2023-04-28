@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helena Lima</title>
+
+    <link rel="shortcut icon" href="./assets/flaticon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;800&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body onresize="changeSize()">
+
+    <header id="top">
+        <div class="logo">
+            <a href="https://github.com/Helenapl145" target="_blank"> <img src="./assets/logoHpl.png" alt="Logo escrito HPL"> </a>
+        </div>
+        
+        <button class="moblieNav" aria-controls="primary-navigation" aria-expanded="false" data-visible="true"></button>
+
+        <nav class="navegation">
+            <ul id="primary-navegation" class="primary-navigation" data-visible="false">
+                <li  class="link">
+                    <a href="#about">Sobre mim</a>
+                </li>
+
+                <li  class="link">
+                    <a href="#project">Projetos</a>
+                </li>
+           
+                <li  class="link">
+                    <a href="#curriculum">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+   
+    <div class="linePrimary"></div>
+
+    <main id="about">
+        <div class="photo">
+            <img  src="./assets/foto.jpg" alt="Foto da Helena">
+        </div>
+
+        <section>
+            <div>
+                <h1>
+                    Helena Paulino
+                </h1>
+                <h4>
+                    Desenvolvedora Front-Web
+                </h4>
+                <p>
+                    Olá, me chamo Helena Paulino de Lima tenho 18 anos, sou desenvolvedora junior tenho conhecimento em JavaScript, CSS e HTML, além disso tenho conhecimento em figma e react.
+                </p>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="https://github.com/Helenapl145" target="_blank"><img src="./assets/github.png" alt="Logo do gitHub"></a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/helena-lima-9269971b4/" target="_blank"><img src="./assets/linkedin.png" alt="Logo Linkedin"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <section id="project">
+        <div class="headerProject">
+            <h1>MEUS PROJETOS</h1>
+            <h3>Psiu, clica nas imagens e vem conhecer mais do meu trabalho!</h3>
+        </div>
+
+        <div class="cards">
+            <div class="card" id="img1">
+                <a  href="https://helenapl145.github.io/projetoOportuniza/" target="_blank">  
+                    <img id="imgMain" src="./assets/projeto-1.png" alt="Projeto Oportuniza">
+                </a>
+            </div>
+
+            <div class="card" id="img2">
+                <a href="https://astronomia-nine.vercel.app/" target="_blank">
+                    <img src="./assets/projeto-2.png" alt="Projeto Astronomia">
+                </a>    
+            </div>
+
+            <div class="card" id="img3">
+                <a href="https://helenapl145.github.io/flappyBird/" target="_blank"> 
+                    <img src="./assets/projeto-3.png" alt="Projeto flappyBird">
+                </a>
+            </div>
+
+            <ul id="slider">
+                <li class="slide">
+                    <a class="numb clicado" id="slide1"></a>
+                </li>
+
+                <li class="slide">
+                    <a class="numb" id="slide2"></a>
+                </li>
+
+                <li class="slide">
+                    <a class="numb" id="slide3"></a>
+                </li>
+            </ul>
+        </div>
+
+        <p class="moreProject">Para ver mais projeto <a href="https://github.com/Helenapl145" target="_blank">clique aqui</a></p>
+    </section>
+
+    <section id="curriculum">
+        <div class="background">
+            <header>
+                <div class="imgCurriculum">
+                    <img src="/assets/foto.jpg" alt="Foto sorrindo">
+                </div>
+
+                <div class="description">
+                    <h4>Helena Paulino</h4>
+                    <p>Estou disponivel para novas expêriencia, caso queira saber mais sobre mim pode entrar em contato.</p>
+                </div>
+            </header>
+
+            <div class="lineCurriculum"></div>
+
+            <div id="content">
+                <div>
+                    <h5>Tecnologias aprendidas</h5>
+                    <div class="wraperTech">
+                        <div class="item">
+                            <div class="backItem"><img src="/assets/js.png" alt="Icone do JS"></div>
+                            <p>JavaScript</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="backItem"><img src="/assets/css.png" alt="Icone do CSS"></div>
+                            <p>css</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="backItem"><img src="/assets/html.png" alt="Icone HTML"></div>
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h5>Minhas habilidades</h5>
+                    <div class="wraperHabi">
+                        <div class="habilidades">
+                            <div class="habilidade">
+                                <p>Trabalho em equipe</p>
+                                <img src="/assets/estrelaWork.png" alt="Estrelas">
+                            </div>
+
+                            <div class="habilidade">
+                                <p>Aprendizado continuo</p>
+                                <img src="/assets/estrelaLearn.png" alt="Estrelas">
+                            </div>
+                        </div>
+
+                        <div class="habilidades">
+                            <div class="habilidade">
+                                <p>Comunicação</p>
+                                <img src="/assets/estrelaComunicacao.png" alt="Estrelas">
+                            </div>
+                            <div class="habilidade">
+                                <p>Design UX</p>
+                                <img src="/assets/estrelaDesign.png" alt="Estrelas">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contactCurriculum">
+                    <h5>Entre em contato</h5>
+                    <div class="contacts">
+                        <a href="https://github.com/Helenapl145" target="_blank"><img src="/assets/github.png" alt="Logo do github"></a>
+
+                        <a href="mailto:helenapl145@gmail.com"><img src="/assets/email.png" alt="Logo do Email"></a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <a href="#top" class="btnFixed" id="btnTop"><img src="./assets/topoBtn.png" alt="Botão para ir ao topo da página"></a>
+
+   
+    <script src="/script.js"></script>
+    <script src="/slider.js"></script>
+
+</body>
+
+</html>
